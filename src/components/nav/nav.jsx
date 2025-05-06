@@ -165,14 +165,15 @@ const Nav = () => {
               Education
             </SytledlinksItems>
           </li>
-          <li>
-            <SytledlinksItems href="#services" onClick={handleLinkClick}>
-              Services
-            </SytledlinksItems>
-          </li>
+
           <li>
             <SytledlinksItems href="#skills" onClick={handleLinkClick}>
               Skills
+            </SytledlinksItems>
+          </li>
+          <li>
+            <SytledlinksItems href="#work" onClick={handleLinkClick}>
+              Project
             </SytledlinksItems>
           </li>
           <li>

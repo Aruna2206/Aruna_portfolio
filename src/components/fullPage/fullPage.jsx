@@ -13,7 +13,7 @@ const FullPage = () => {
       <Home />
       <About />
       <Exed />
-      <Services />
+      {/* <Services /> */}
       <Skills />
       <Work />
       <Footer />

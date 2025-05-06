@@ -44,31 +44,31 @@ const ShowMoreButton = styled(Button)`
 `;
 const Work = () => {
   const [buttonText, setButtonText] = useState("more");
-  const [projectHeight, setProjectHeight] = useState("105rem");
+  // const [projectHeight, setProjectHeight] = useState("105rem");
 
-  const handleClick = () => {
-    if (buttonText === "more") {
-      setButtonText("less");
-      setProjectHeight("100%");
-    } else {
-      setButtonText("more");
-      setProjectHeight("105rem");
-    }
-  };
+  // const handleClick = () => {
+  //   if (buttonText === "more") {
+  //     setButtonText("less");
+  //     setProjectHeight("100%");
+  //   } else {
+  //     setButtonText("more");
+  //     setProjectHeight("105rem");
+  //   }
+  // };
   return (
     <Box
       className="work container second-black-container"
       sx={{
-        height: projectHeight,
+        // height: projectHeight,
         overflowY: "clip",
         position: "relative",
         transition: "all 0.5s linear",
       }}
     >
-      <Heading headerText="My Work" id="work" />
-      <ShowMoreButton variant="contained" onClick={handleClick}>
+      <Heading headerText="My Project" id="work" />
+      {/* <ShowMoreButton variant="contained" onClick={handleClick}>
         Show {buttonText} projects
-      </ShowMoreButton>
+      </ShowMoreButton> */}
       <Box className="projects">
         {projData.map((project) => {
           return (
@@ -91,6 +91,7 @@ const Work = () => {
                   width: { xs: "100%", lg: "50%" },
                   alignItems: { xs: "center", lg: "unset" },
                   textAlign: { xs: "center", lg: "unset" },
+                  padding: { xs: "2rem 1rem 0", lg: "2rem 0 0 0" }, // top padding added here
                 }}
               >
                 <StyledName variant="h4">{project.name}</StyledName>

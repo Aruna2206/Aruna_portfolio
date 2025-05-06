@@ -138,7 +138,7 @@ const Home = () => {
             variants={buttonVariants}
             initial="hidden"
             animate="visible"
-            href="aruna22062004@gmail.com"
+            href="mailto:aruna22062004@gmail.com"
           >
             <CustomButton
               beforeWidth={"0%"}

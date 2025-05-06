@@ -9,7 +9,7 @@ export const projData = [
     languages: [icons.react, icons.html, icons.css, icons.javascript],
     image: "color_picker.png",
     link: "https://color-picker-tool.vercel.app/",
-    gitLink: "https://github.com/yourusername/color-picker-tool",
+    gitLink: "https://github.com/Aruna2206/Color-picker",
     done: true,
   },
   {
