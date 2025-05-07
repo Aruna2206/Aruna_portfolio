@@ -1,13 +1,13 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import LogoImage from "../../assets/images/Logo.png";
+import LogoImage from "../../assets/images/Logo (1).png";
 import Upwork from "../../assets/icons/upwork 1.svg";
 import Linkedin from "../../assets/icons/linkedin.svg";
 import Github from "../../assets/icons/github2.svg";
 import Twitter from "../../assets/icons/twitter.svg";
 import Mostaql from "../../assets/icons/Mostaql.svg";
 import WhatsApp from "../../assets/icons/whatsapp.svg";
-
+import EmailIcon from "../../assets/icons/email.png";
 const Footer = () => {
   const [year, setYear] = useState();
 
@@ -29,10 +29,36 @@ const Footer = () => {
       >
         <Box>
           <a href="/">
-            <h1>Aruna</h1>
+            <img
+              width="55px"
+              src={LogoImage}
+              style={{
+                height: "150px", // Makes it match the header height
+                width: "auto", // Maintains aspect ratio
+                objectFit: "fill", // Ensures it fits without cropping
+                borderRadius: "0",
+
+                borderRadius: "30px",
+
+                // No rounding, since it's not needed
+                // Prevents spacing issues
+              }}
+              alt="Aruna's Logo"
+            />
           </a>
         </Box>
         <Stack direction="row" alignItems="center" gap="1rem">
+          <a
+            href="mailto:aruna22062004@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={EmailIcon}
+              alt="Email"
+              style={{ width: "40px", height: "40px" }}
+            />
+          </a>
           <a
             href="https://www.linkedin.com/in/aruna-dev/"
             target="_blank"

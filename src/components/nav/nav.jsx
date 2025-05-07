@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Box, Stack } from "@mui/material";
-import LogoImage from "../../assets/images/Logo.png";
+import LogoImage from "../../assets/images/Logo(1).png";
 import { styled } from "styled-components";
 import { motion } from "framer-motion";
 
@@ -112,17 +112,25 @@ const Nav = () => {
         direction="row"
         sx={{
           justifyContent: "space-between",
-          padding: { xs: "1rem 2rem", md: "1rem 5rem" },
+          padding: { xs: "", md: "1rem 5rem" },
           alignItems: "center",
         }}
       >
-        <Box className="logo" sx={{ transform: "scale(1.2)" }}>
+        <Box className="logo" sx={{ transform: "scale(1.2)", height: "100%" }}>
           <a href="/">
-            {/* <img
+            <img
               src={LogoImage}
               alt="logo"
-              style={{ width: "100px", height: "100px" }}
-            /> */}
+              style={{
+                height: "50px", // Makes it match the header height
+                width: "auto", // Maintains aspect ratio
+                objectFit: "fill", // Ensures it fits without cropping
+                borderRadius: "0",
+                marginLeft: "100px",
+                // No rounding, since it's not needed
+                // Prevents spacing issues
+              }}
+            />
           </a>
         </Box>
 
